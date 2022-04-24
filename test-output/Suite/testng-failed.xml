@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestRunner_1(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.com.autodesk.Organization.Test.TC_05_CreateOrganizationWithNotifyOwnerCBTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="DisConnectDB"/>
+          <include name="lanuchBrowser"/>
+          <include name="ConnectDB"/>
+          <include name="createOrganizationWithNotifyOwnerCBTest"/>
+          <include name="loginToApp"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.com.autodesk.Organization.Test.TC_05_CreateOrganizationWithNotifyOwnerCBTest -->
+    </classes>
+  </test> <!-- TestRunner_1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

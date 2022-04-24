@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests" >
+
+  <test thread-count="5" parallel="tests" name="Test1">
+  
+  <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.com.autodesk.Organization.Test.TC_01_CreateOrganizationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="Test2">
+  
+  <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.com.autodesk.Organization.Test.TC_02_CreateOrganizationWithIndusrtyTypeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

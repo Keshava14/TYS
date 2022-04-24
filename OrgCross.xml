@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+
+  <test thread-count="2" name="TestRunner_1" parallel="tests">
+  
+  <parameter name="Browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.com.autodesk.Organization.Test.TC_05_CreateOrganizationWithNotifyOwnerCBTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="2" name="TestRunner_2" parallel="tests">
+  
+  <parameter name="Browser" value="opera"></parameter>
+    <classes>
+      <class name="com.com.autodesk.Organization.Test.TC_06_CheckingNotifyCheckBoxEnabledOrNotTest"/>
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

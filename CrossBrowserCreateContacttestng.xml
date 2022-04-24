@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Test_1">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="PracticeMaven.CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test_2">
+		<parameter name="Browser" value="firefox"></parameter>
+
+		<classes>
+			<class name="PracticeMaven.CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test_3">
+		<parameter name="Browser" value="edge"></parameter>
+
+		<classes>
+			<class name="PracticeMaven.CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test_4">
+		<parameter name="Browser" value="opera"></parameter>
+
+		<classes>
+			<class name="PracticeMaven.CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test_5">
+		<parameter name="Browser" value="Iexplorer"></parameter>
+
+		<classes>
+			<class name="PracticeMaven.CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
